@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goignis Technologies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        header {
+            background: #005f99;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 18px;
+            padding: 8px;
+            
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav ul li:hover{
+            background-color: orange;
+            border-radius: 20px;
+
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+
+        }
+
+        .about {
+            background: #f4f4f4;
+        }
+
+        .services {
+            background: #e8f7ff;
+        }
+
+        .services .service {
+            margin: 20px;
+        }
+        #contact p{
+            margin: 10px;
+        }
+        #contact button{
+            margin: 10px;
+        }
+
+        footer {
+            background: #005f99;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 5px;
+        }
+
+        .btn {
+            background-color: #007bb5;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #005f99;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <h1>Goignis Technologies</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>GoIGNIS is a team of skilled and experienced engineers based out of India who specialize in providing
+            top-quality design and engineering services to US-based MEP companies and consultants. Our team is
+            well-versed with codes and standards including NFPA, FM, UL & local AHJ guidelines, and we offer a wide
+            range of engineering services including mechanical, electrical, Fire Alarm & Protection, and ARC solutions.
+        </p>
+    </section>
+
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Fire Alarm Engineering</h3>
+            <p>At GoIGNIS, we understand the critical role that a well-designed fire alarm system plays in protecting life and property. Our engineers have the expertise to design fire alarm systems that offer complete coverage as per NPFA & local AHJ requirements.</p>
+        </div>
+        <div class="service">
+            <h3>Electrical Engineering</h3>
+            <p>Our electrical engineering team at GoIGNIS understands the ever-increasing complexity and functionality of building systems. We are committed to providing quality electrical designs that ensure projects are on time and within budget.</p>
+        </div>
+        <div class="service">
+            <h3>HVAC Engineering</h3>
+            <p>At GoIGNIS, we recognize that HVAC is an essential component of any building, from homes to large businesses. That's why we offer HVAC engineering services to help plan and design the perfect system for your project. Our team of experienced HVAC designers will work with your team to create a functional and efficient system to meet your needs. </p>
+        </div>
+    </section>
+
+    <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions? Feel free to get in touch!</p>
+            <button class="btn" onclick="contactUs()">Contact Us</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Goignis Technologies. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function contactUs() {
+            alert('Thank you for reaching out! We will get back to you shortly.');
+        }
+    </script>
+</body>
+
+</html>
